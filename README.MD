@@ -13,7 +13,7 @@ The Raspberry Pi Zero W sends 3V over GPIO pin 1 to both the low voltage side of
 
 The Raspberry Pi Zero W receives Weigand data (data0 and data 1) stepped down to 3V from 5V on GPIO pins 17 and 18. Note that these are numbered 0 and 1 in the WiringPi standard, which is implemented in wiegand_rpi via the WiringPi library. Do not connect Wiegand data sources directly to the raspberry pi as they run at 5V and will damage the Raspberry Pi. Pin 3 is the common ground for the 12V power supply, the RFID reader, and the Raspberry Pi (and it's 5V power supply provided by a 12V/5V stepper)
 
-![Raspberry Pi Pinout](/images/RaspberryPiWiring.png?raw=true)
+![Raspberry Pi Pinout](/images/RaspberryPiWIring.png?raw=true)
 
 When a fob is passed near the reader, wiegand_rpi interprets the 26 bit fob data and sends the digital "full code" of the fob, a 10-digit number with three leading zeroes, to stdout.
 
